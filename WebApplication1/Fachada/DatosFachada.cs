@@ -16,8 +16,9 @@ namespace WebApplication1.Fachada
         /// ANDRES NARANJO 2015-05-15 devuelve una lista de la entidad copia
         /// </summary>
         /// <returns></returns>
-        public List<copia> BuscarDatosCopia() {
-            return new CopiaLogica().BuscarDatosCopia().ToList();
+        public List<copia> BuscarDatosCopia(long cedula)
+        {
+            return new CopiaLogica().BuscarDatosCopia(cedula).ToList();
         }
     }
 }

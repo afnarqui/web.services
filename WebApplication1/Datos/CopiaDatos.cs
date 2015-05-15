@@ -13,14 +13,14 @@ namespace WebApplication1.Datos
         /// ANDRES NARANJO 2015-05-15 devuelve una lista de la entidad copia
         /// </summary>
         /// <returns></returns>
-        public List<copia> BuscarDatosCopia()
+        public List<copia> BuscarDatosCopia(long cedula )
         {
 
 
             using (DatosopawebEntities bd = new DatosopawebEntities())
             {
 
-                return bd.copias.Take(10).ToList();
+                return bd.copias.Where(afn => cedula == 0 ? afn.cedulasociado == afn.cedulasociado : afn.cedulasociado == cedula).Take(10).ToList();
 
             }
 

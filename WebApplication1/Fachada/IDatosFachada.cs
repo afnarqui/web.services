@@ -11,7 +11,7 @@ namespace WebApplication1.Fachada
     interface IDatosFachada
     {
         [OperationContract]
-        System.Collections.Generic.List<WebApplication1.Negocio.copia> BuscarDatosCopia();
+        System.Collections.Generic.List<WebApplication1.Negocio.copia> BuscarDatosCopia(long cedula);
 
     }
 }
