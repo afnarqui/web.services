@@ -10,6 +10,8 @@ namespace WebApplication1.Fachada
     public class DatosFachada:IDatosFachada
     {
 
+        
+
         /// <summary>
         /// ANDRES NARANJO 2015-05-15 devuelve una lista de la entidad copia
         /// </summary>

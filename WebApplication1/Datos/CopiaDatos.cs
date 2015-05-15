@@ -20,7 +20,7 @@ namespace WebApplication1.Datos
             using (DatosopawebEntities bd = new DatosopawebEntities())
             {
 
-                return bd.copias.ToList();
+                return bd.copias.Take(10).ToList();
 
             }
 
