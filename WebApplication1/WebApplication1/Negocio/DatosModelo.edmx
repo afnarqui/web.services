@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="DatosopawebModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="DatosopawebModelStoreContainer">
+          <EntitySet Name="copia" EntityType="DatosopawebModel.Store.copia" store:Type="Tables" store:Schema="dbo" store:Name="copia">
+            <DefiningQuery>SELECT 
+      [copia].[nombreintegrado] AS [nombreintegrado], 
+      [copia].[cedulasociado] AS [cedulasociado], 
+      [copia].[salario] AS [salario]
+      FROM [dbo].[copia] AS [copia]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+        <!--Se encontraron errores durante la generación:
+      advertencia 6002: La tabla o vista 'opaweb.dbo.copia' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
+      -->
+        <EntityType Name="copia">
+          <Key>
+            <PropertyRef Name="cedulasociado" />
+            <PropertyRef Name="salario" />
+          </Key>
+          <Property Name="nombreintegrado" Type="varchar" MaxLength="105" />
+          <Property Name="cedulasociado" Type="bigint" Nullable="false" />
+          <Property Name="salario" Type="numeric" Nullable="false" />
+        </EntityType>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="DatosopawebModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="DatosopawebEntities" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="copias" EntityType="DatosopawebModel.copia" />
+        </EntityContainer>
+        <EntityType Name="copia">
+          <Key>
+            <PropertyRef Name="cedulasociado" />
+            <PropertyRef Name="salario" />
+          </Key>
+          <Property Name="nombreintegrado" Type="String" MaxLength="105" Unicode="false" FixedLength="false" />
+          <Property Name="cedulasociado" Type="Int64" Nullable="false" />
+          <Property Name="salario" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="DatosopawebModelStoreContainer" CdmEntityContainer="DatosopawebEntities">
+          <EntitySetMapping Name="copias">
+            <EntityTypeMapping TypeName="DatosopawebModel.copia">
+              <MappingFragment StoreEntitySet="copia">
+                <ScalarProperty Name="nombreintegrado" ColumnName="nombreintegrado" />
+                <ScalarProperty Name="cedulasociado" ColumnName="cedulasociado" />
+                <ScalarProperty Name="salario" ColumnName="salario" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

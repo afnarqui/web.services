@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DatosopawebModelStoreContainer" CdmEntityContainer="DatosopawebEntities">
+    <EntitySetMapping Name="copias">
+      <EntityTypeMapping TypeName="DatosopawebModel.copia">
+        <MappingFragment StoreEntitySet="copia">
+          <ScalarProperty Name="nombreintegrado" ColumnName="nombreintegrado" />
+          <ScalarProperty Name="cedulasociado" ColumnName="cedulasociado" />
+          <ScalarProperty Name="salario" ColumnName="salario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

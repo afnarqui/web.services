@@ -1,0 +1,7 @@
+E:\opa\WebApplication1\WebApplication1\bin\WebApplication1.dll
+E:\opa\WebApplication1\WebApplication1\bin\WebApplication1.pdb
+E:\opa\WebApplication1\WebApplication1\bin\EntityFramework.dll
+E:\opa\WebApplication1\WebApplication1\bin\EntityFramework.xml
+E:\opa\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
+E:\opa\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
+E:\opa\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
