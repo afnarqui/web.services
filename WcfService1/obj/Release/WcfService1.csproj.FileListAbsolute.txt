@@ -1,0 +1,9 @@
+E:\opa\web.services\WcfService1\bin\WcfService1.dll
+E:\opa\web.services\WcfService1\bin\WcfService1.pdb
+E:\opa\web.services\WcfService1\bin\WebApplication1.dll
+E:\opa\web.services\WcfService1\bin\EntityFramework.dll
+E:\opa\web.services\WcfService1\bin\WebApplication1.pdb
+E:\opa\web.services\WcfService1\bin\EntityFramework.xml
+E:\opa\web.services\WcfService1\obj\Release\WcfService1.csprojResolveAssemblyReference.cache
+E:\opa\web.services\WcfService1\obj\Release\WcfService1.dll
+E:\opa\web.services\WcfService1\obj\Release\WcfService1.pdb

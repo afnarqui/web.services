@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="DatosopawebEntities-Web.config Connection String" description="DatosopawebEntities Cadena de conexión que usa la aplicación en web.config para obtener acceso a la base de datos." defaultValue="metadata=res://*/Negocio.DatosModelo.csdl|res://*/Negocio.DatosModelo.ssdl|res://*/Negocio.DatosModelo.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=ANDRES-PC\SQL2012;initial catalog=opaweb;persist security info=True;user id=sa;password=opa1.;MultipleActiveResultSets=True;App=EntityFramework&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="E:\\opa\\web\.services\\WcfService1\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DatosopawebEntities']/@connectionString" />
+  </parameter>
+</parameters>
