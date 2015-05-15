@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DatosopawebModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="DatosopawebModelStoreContainer">
+    <EntitySet Name="copia" EntityType="DatosopawebModel.Store.copia" store:Type="Tables" store:Schema="dbo" store:Name="copia">
+      <DefiningQuery>SELECT 
+      [copia].[nombreintegrado] AS [nombreintegrado], 
+      [copia].[cedulasociado] AS [cedulasociado], 
+      [copia].[salario] AS [salario]
+      FROM [dbo].[copia] AS [copia]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+  <!--Se encontraron errores durante la generación:
+      advertencia 6002: La tabla o vista 'opaweb.dbo.copia' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
+      -->
+  <EntityType Name="copia">
+    <Key>
+      <PropertyRef Name="cedulasociado" />
+      <PropertyRef Name="salario" />
+    </Key>
+    <Property Name="nombreintegrado" Type="varchar" MaxLength="105" />
+    <Property Name="cedulasociado" Type="bigint" Nullable="false" />
+    <Property Name="salario" Type="numeric" Nullable="false" />
+  </EntityType>
+</Schema>

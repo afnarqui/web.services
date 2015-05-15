@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DatosopawebModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="DatosopawebEntities" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="copias" EntityType="DatosopawebModel.copia" />
+  </EntityContainer>
+  <EntityType Name="copia">
+    <Key>
+      <PropertyRef Name="cedulasociado" />
+      <PropertyRef Name="salario" />
+    </Key>
+    <Property Name="nombreintegrado" Type="String" MaxLength="105" Unicode="false" FixedLength="false" />
+    <Property Name="cedulasociado" Type="Int64" Nullable="false" />
+    <Property Name="salario" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+  </EntityType>
+</Schema>
