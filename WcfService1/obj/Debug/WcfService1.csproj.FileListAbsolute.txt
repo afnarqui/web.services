@@ -1,0 +1,5 @@
+E:\opa\web.services\WcfService1\bin\WcfService1.dll
+E:\opa\web.services\WcfService1\bin\WcfService1.pdb
+E:\opa\web.services\WcfService1\obj\Debug\WcfService1.csprojResolveAssemblyReference.cache
+E:\opa\web.services\WcfService1\obj\Debug\WcfService1.dll
+E:\opa\web.services\WcfService1\obj\Debug\WcfService1.pdb

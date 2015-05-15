@@ -7,7 +7,7 @@ using WebApplication1.Negocio;
 
 namespace WebApplication1.Fachada
 {
-    public class DatosFachada
+    public class DatosFachada:IDatosFachada
     {
 
         /// <summary>
